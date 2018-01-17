@@ -1,10 +1,33 @@
-body {
-    background-color: grey;
+p {
+    font-family: 'Lato', sans-serif;
+    color: #333;
+    line-height: 1.7em;
+    margin: 15px 30px;
+
 }
+
+h1 {
+    text-align: center;
+    margin-bottom: 50px;
+    font-family: 'Fira Sans Condensed', sans-serif;
+}
+
+a:focus {
+    text-decoration: none;
+}
+
+.row {
+    margin:0;
+}
+
+/*navigation bar*/
 
 #menu {
     float: right;
     background-color: white;
+    position: fixed;
+    top: 0;
+    width: 100%;
 }
 
 #menu-list {
@@ -20,8 +43,12 @@ body {
 #menu-list-desktop li {
     display: inline;
     float: right;
-    margin: 25px 15px 35px;
+    margin: 15px 15px 30px;
     padding: 0 8px;
+}
+
+#menu-list-desktop:first-child {
+    padding-right: 20px;
 }
 
 #menu-list-desktop a{
@@ -74,16 +101,6 @@ body {
     padding-top: 60px;
 }
 
-.main-photo {
-    width: 100vw;
-    height: 100vh;
-    background-image: url("../img/pizza.jpeg");
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-}
-
 #close-icon img {
     width: 40px;
     height: 40px;
@@ -106,18 +123,6 @@ body {
     font-size: 1.4rem;
 }
 
-.current {
-    background-color: grey;
-}
-
-.answer {
-    display: none;
-}
-
-.question {
-    cursor: pointer;
-}
-
 a,
 a:hover {
     color: white;
@@ -135,4 +140,99 @@ a:hover {
     #menu {
         display: none;
     }
+}
+
+.division {
+    padding: 0 3px 0 10px;
+}
+
+.glyphicon {
+    padding: 0 7px;
+}
+
+.order p {
+    margin: 10px 15px;
+    float: right;
+    font-size: .85em;
+    color: #f50000;
+}
+
+.order a {
+    color: #f50000;
+}
+
+.order a:hover {
+    text-decoration: underline;
+}
+
+#logo {
+    position: absolute;
+    top: 10px;
+    left: 45px;
+    width:200px;
+}
+
+/*Home page*/
+
+
+/*.main-photo {*/
+    /*width: 100vw;*/
+
+/*}*/
+
+.parallax {
+    /* Set a specific height */
+    height: 100vh;
+
+    /* Create the parallax scrolling effect */
+    background-image: url("../img/pizza-main.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.parallax h1 {
+    font-family: 'Fira Sans Condensed', sans-serif;
+    color: #fff;
+    font-size: 4.5em;
+    line-height: 600px;
+    font-weight: 700;
+    text-align: center;
+    text-shadow: 3px 3px black;
+}
+
+@media screen and (max-width: 550px) {
+    .parallax h1 {
+    font-size: 3em;
+    }
+}
+
+.text-about {
+    padding-top: 60px;
+    padding-bottom: 70px;
+    text-align: center;
+}
+
+.text-about p:first-of-type {
+    font-size: 1.3em;
+    font-weight: 600;
+    padding-bottom: 12px;
+}
+
+.menu-img img{
+    max-width: 85%;
+}
+
+/*FAQ*/
+.current {
+    background-color: grey;
+}
+
+.answer {
+    display: none;
+}
+
+.question {
+    cursor: pointer;
 }

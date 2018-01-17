@@ -5,8 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>FAQ</title>
-    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
-    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Fira+Sans+Condensed|Lato" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <link href="css/styles.css" rel="stylesheet">
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
@@ -17,14 +17,26 @@
 </head>
 <body>
     <div id="menu">
-        <ul id="menu-list-desktop">
-            <li><a href="jobs.html">Jobs</a></li>
-            <li><a href="table.html">Oder a table</a></li>
-            <li><a href="FAQ.html">FAQ</a></li>
-            <li><a href="location.html">Find us</a></li>
-            <li><a href="menu.html">Menu</a></li>
-            <li><a class="active" href="#">Home</a></li>
-        </ul>
+        <div class="row">
+            <div class="order">
+                <p>Order pizza: <span class="glyphicon glyphicon-earphone"></span><a href="tel:+4917666333666">017666333666
+                </a><span class="division">|
+                </span>
+                    <span class="glyphicon glyphicon-map-marker"></span><a href="map">Langberger Allee 34, 10437
+                    Berlin</a></p>
+            </div>
+        </div>
+        <div class="row">
+            <ul id="menu-list-desktop">
+                <li><a href="jobs.html">Jobs</a></li>
+                <li><a href="table.html">Oder a table</a></li>
+                <li><a href="FAQ.html">FAQ</a></li>
+                <li><a href="location.html">Find us</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a class="active" href="#">Home</a></li>
+                <li><img id="logo" src="img/PizzaPlaceLogo.png"></li>
+            </ul>
+        </div>
     </div>
 
     <div id="menu-mobile">
@@ -39,9 +51,41 @@
         </ul>
     </div> <!--/menu-->
 
-    <div class="main-photo">
+    <div class="parallax main-photo">
+        <div class="parallax-text">
+            <h1>Best pizza in town</h1>
+        </div>
         <div class="icon-menu">
             <img src="img/hamburger.png"/>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="text-about">
+            <h1>Pizza Place</h1>
+            <p>
+                Pizza Place is one of the most popular Pizzerias in Berlin.
+            </p>
+            <p>
+                Our pizza is exactly the same as pizza you can eat on the streets of Naples, <br>made with the same
+                ingredients and prepared using the same cooking method.
+            </p>
+            <p>
+                Our pizzas are served up alongside a carefully selected and regularly refreshed <br>range of craft beer,
+                fine wine and twists on classic cocktails.
+            </p>
+        </div>
+    </div> <!--/ row-->
+    <div class="row">
+        <div class="col-xs-12 col-md-6">
+            <div class="menu-img">
+                <img class="img-fluid" src="img/pizza1.jpg">
+            </div>
+        </div>
+        <div class="col-xs-12 col-md-6">
+            <div class="menu-img">
+                <img class="img-fluid" src="img/pizza2.jpg">
+            </div>
         </div>
     </div>
 
