@@ -1,7 +1,7 @@
 /**
  * Created by ania on 2018-01-12.
  */
-var main = function() {
+var menu = function() {
     $('.icon-menu').click(function(){
         $('#menu,#menu-list').animate({
             left:'0px'},300);
@@ -15,4 +15,17 @@ var main = function() {
             left:'0px'},300);
     });
 };
-$(document).ready(main);
+
+var faq = function() {
+    $('.question-container').click(function(event){
+        $('.question').removeClass('current');
+        $('.answer').hide();
+        $(this).children('.answer').show();
+        $(this).children('.question').addClass('current');
+    });
+};
+
+
+$(document).ready(menu);
+$(document).ready(faq);
+

@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Pizza Place</title>
+    <title>FAQ</title>
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
     <link href="css/bootstrap.css" rel="stylesheet">
     <link href="css/styles.css" rel="stylesheet">
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
@@ -16,13 +17,24 @@
 </head>
 <body>
     <div id="menu">
+        <ul id="menu-list-desktop">
+            <li><a href="jobs.html">Jobs</a></li>
+            <li><a href="table.html">Oder a table</a></li>
+            <li><a href="FAQ.html">FAQ</a></li>
+            <li><a href="location.html">Find us</a></li>
+            <li><a href="menu.html">Menu</a></li>
+            <li><a class="active" href="#">Home</a></li>
+        </ul>
+    </div>
+
+    <div id="menu-mobile">
         <ul id="menu-list">
             <li id="close-icon"><img src="img/close-icon.png"/></li>
             <li>Home</li>
             <li>Menu</li>
             <li>Find us</li>
             <li>Oder a table</li>
-            <li>FAQ</li>
+            <li><a href="FAQ.html">FAQ</a></li>
             <li>Work with us</li>
         </ul>
     </div> <!--/menu-->
@@ -30,7 +42,6 @@
     <div class="main-photo">
         <div class="icon-menu">
             <img src="img/hamburger.png"/>
-            <p>MENU</p>
         </div>
     </div>
 
