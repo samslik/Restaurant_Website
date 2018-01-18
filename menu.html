@@ -15,7 +15,7 @@
     <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
 </head>
-<body>
+<body data-spy="scroll" data-target=".navbar">
     <div id="menu">
         <div class="row">
             <div class="order">
@@ -54,9 +54,11 @@
 
     <!--MENU-->
     <div class="container-fluid" id="dish-menu">
-        <div class="row">
+        <!--dish-menu-->
+        <div class="dish-list">
+            <div>
             <!--zaslania logo-->
-            <ul class="dish-list"> <!--needs styling!-->
+            <ul> <!--needs styling!-->
                 <li class="selected"><a href="#starters">Starters</a></li>
                 <li><a href="#classic">Classic pizzas</a></li>
                 <li><a href="#wanted">Most wanted</a></li>
@@ -64,7 +66,9 @@
                 <li><a href="#drinks">Drinks</a></li>
                 <li><a href="#extras">Extras</a></li>
             </ul>
-        </div> <!--/row-->
+        </div>
+        </div>
+
         <div class="menu-header">
             <h1>Our delicious menu</h1>
         </div>

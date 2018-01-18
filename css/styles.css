@@ -1,3 +1,21 @@
+.dish-list {
+    box-sizing: border-box;
+    position: fixed;
+    top: 105px;
+    left: 0;
+    background-color: white;
+    width: 100%;
+}
+
+.dish-list ul {
+    margin-bottom: 0;
+    padding:0;
+}
+
+body {
+    position: relative;
+}
+
 p {
     font-family: 'Lato', sans-serif;
     color: #333;
@@ -191,7 +209,7 @@ a:hover {
     top: 10px;
     left: 45px;
     width:200px;
-    z-index: 2;
+    z-index: -200;
 }
 
 /*Home page*/
@@ -260,7 +278,7 @@ a:hover {
 }
 
 /*MENU*/
-.dish-list {
+.dish-list ul {
     list-style-type: none;
     text-align: center;
 }
@@ -316,29 +334,32 @@ a:hover {
         padding-top:170px;
         margin-top:-170px;
     }
-    .dish-list {
-        box-sizing: border-box;
-        position: fixed;
-        top: 105px;
-        background-color: white;
-        width: 100%;
-        z-index: 3;
-        border-top: 1px solid #ebebeb;
-        border-bottom: 1px solid #ebebeb;
-    }
+
 
     .dish-list .selected {
         font-weight: 600;
         border-bottom: 2px solid #f50000;
+        border-top: 2px solid #f50000;
     }
 
     .dish-list a {
         line-height: 40px;
     }
+
+    .dish-list div {
+        border-top: 1px solid #ebebeb;
+        border-bottom: 1px solid #ebebeb;
+        margin:0 15%;
+    }
+
     .menu-header {
         margin-top: 190px;
     }
     .menu-header h1 {
         margin-bottom: 20px;
     }
+}
+.active {
+    font-weight: 600;
+    border-bottom: 2px solid #f50000;
 }
