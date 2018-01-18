@@ -297,3 +297,9 @@ a:hover {
 .dish-cat ul{
     padding: 0 15%;
 }
+
+.img-cat img{
+    width: 70%;
+    display: block;
+    margin: 0 auto;
+}
