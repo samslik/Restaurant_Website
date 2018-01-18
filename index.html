@@ -19,6 +19,7 @@
     <div id="menu">
         <div class="row">
             <div class="order">
+                <!--link w paragrafie? pogrubienie przy najechaniu myszka bez przemiszczania tekstu-->
                 <p>Order pizza: <span class="glyphicon glyphicon-earphone"></span><a href="tel:+4917666333666">017666333666
                 </a><span class="division">|
                 </span>
@@ -39,7 +40,7 @@
         </div>
     </div>
 
-    <div id="menu-mobile">
+    <div id="menu-mobile"> <!--na razie nie dziala-->
         <ul id="menu-list">
             <li id="close-icon"><img src="img/close-icon.png"/></li>
             <li>Home</li>
@@ -51,16 +52,19 @@
         </ul>
     </div> <!--/menu-->
 
+<!--Parallax-->
     <div class="parallax main-photo">
         <div class="parallax-text">
             <h1>Best pizza in town</h1>
         </div>
-        <div class="icon-menu">
+        <div class="icon-menu"> <!--trzeba gdzies indziej umiescic!!-->
             <img src="img/hamburger.png"/>
         </div>
-    </div>
+    </div> <!--/Parallax-->
 
-    <div class="row">
+<!--about us-->
+    <div class="container-fluid">
+        <div class="row">
         <div class="text-about">
             <h1>Pizza Place</h1>
             <p>
@@ -75,8 +79,12 @@
                 fine wine and twists on classic cocktails.
             </p>
         </div>
-    </div> <!--/ row-->
-    <div class="row">
+    </div> <!--/row - about us-->
+    </div> <!--/ container about us-->
+
+<!--row with food images-->
+    <div class="container-fluid">
+        <div class="row"> <!--trzeba wysrodkowac obrazki-->
         <div class="col-xs-12 col-md-6">
             <div class="menu-img">
                 <img class="img-fluid" src="img/pizza1.jpg">
@@ -87,8 +95,77 @@
                 <img class="img-fluid" src="img/pizza2.jpg">
             </div>
         </div>
+    </div> <!--/row-->
     </div>
 
+    <!--MENU-->
+    <div class="row">
+        <h1>Our delicious menu</h1>
+    </div>
+    <div class="row">
+        <ul class="dish-list">
+            <li>Starters</li>
+            <li>Classic pizzas</li>
+            <li>Most wanted</li>
+            <li>Vegeterian</li>
+            <li>Extras</li>
+            <li>Drinks</li>
+        </ul>
+    </div> <!--/row-->
+    <div class="container-fluid">
+
+        <!--Starters-->
+        <div class="row">
+            <div>
+                <h2>*** STARTERS ***</h2>
+            </div>
+        </div>
+        <div class="row">
+            <div class="starters dish-cat">
+                <ul>
+                    <li>
+                        <div class="flex-container">
+                            <div class="dish-item">
+                                <h3>Olives</h3>
+                                <p>Selection of Italian green and black olives</p>
+                            </div>
+                            <div class="price"><p>€ 2.50</p></div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="flex-container">
+                            <div class="dish-item">
+                                <h3>Cherry Tomatoes Bruschetta</h3>
+                                <p>Crispy bread, fresh cherry tomatoes, garlic, oregano, fresh basil and extra virgin
+                                    olive oil </p>
+                            </div>
+                            <div class="price"><p>€4.00</p></div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="flex-container">
+                            <div class="dish-item">
+                                <h3>Focaccia</h3>
+                                <p>Garlic bread and olives</p>
+                            </div>
+                            <div class="price"><p>€ 3.50</p></div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="flex-container">
+                            <div class="dish-item">
+                                <h3>Focaccia with mozzarella</h3>
+                                <p>Garlic bread, mozzarella, olives </p>
+                            </div>
+                            <div class="price"><p>€ 5.00</p></div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        </div>
+    </div>
 
 <!--JAVASCRIPT-->
 <script src="js/jquery-3.2.1.js"></script>
