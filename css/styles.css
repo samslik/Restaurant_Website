@@ -267,6 +267,11 @@ a:hover {
     display: inline-block;
     padding: 15px;
 }
+
+.dish-list a{
+    color: black;
+}
+
 .dish-item {
     width: 90%;
     display: inline-block;
@@ -302,4 +307,9 @@ a:hover {
     width: 70%;
     display: block;
     margin: 0 auto;
+}
+
+.scroll-adjust{
+    padding-top:110px;
+    margin-top:-110px;
 }
