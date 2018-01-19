@@ -15,11 +15,11 @@
     <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
 </head>
-<body data-spy="scroll" data-target=".navbar">
+<body>
+<!--desktop navigation-->
     <div id="menu">
         <div class="row">
             <div class="order">
-                <!--link w paragrafie? pogrubienie przy najechaniu myszka bez przemiszczania tekstu-->
                 <p>Order pizza: <span class="glyphicon glyphicon-earphone"></span><a href="tel:+4917666333666">017666333666
                 </a><span class="division">|
                 </span>
@@ -39,7 +39,9 @@
             </ul>
         </div>
     </div>
+<!--/ desktop navigation-->
 
+<!--mobile navigation-->
     <div id="menu-mobile"> <!--na razie nie dziala-->
         <ul id="menu-list">
             <li id="close-icon"><img src="img/close-icon.png"/></li>
@@ -57,16 +59,15 @@
         <!--dish-menu-->
         <div class="dish-list">
             <div>
-            <!--zaslania logo-->
-            <ul> <!--needs styling!-->
-                <li class="selected"><a href="#starters">Starters</a></li>
-                <li><a href="#classic">Classic pizzas</a></li>
-                <li><a href="#wanted">Most wanted</a></li>
-                <li><a href="#vegetarian">Vegeterian</a></li>
-                <li><a href="#drinks">Drinks</a></li>
-                <li><a href="#extras">Extras</a></li>
-            </ul>
-        </div>
+                <ul>
+                    <li class="select selected"><a href="#starters">Starters</a></li>
+                    <li class="select"><a href="#classic">Classic pizzas</a></li>
+                    <li class="select"><a href="#wanted">Most wanted</a></li>
+                    <li class="select"><a href="#vegetarian">Vegeterian</a></li>
+                    <li class="select"><a href="#drinks">Drinks</a></li>
+                    <li class="select"><a href="#extras">Extras</a></li>
+                </ul>
+            </div>
         </div>
 
         <div class="menu-header">

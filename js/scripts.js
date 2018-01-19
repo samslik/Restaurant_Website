@@ -25,7 +25,14 @@ var faq = function() {
     });
 };
 
+var menuHighlight = function() {
+    $(".select").click(function(){
+        $(".select").removeClass('selected');
+        $(this).addClass('selected');
+    });
+}
 
 $(document).ready(menu);
 $(document).ready(faq);
+$(document).ready(menuHighlight);
 
