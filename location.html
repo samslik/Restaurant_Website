@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Home</title>
-    <link href="https://fonts.googleapis.com/css?family=Fira+Sans+Condensed|Lato" rel="stylesheet">
+    <title>Pizza Place</title>
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <link href="css/styles.css" rel="stylesheet">
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
@@ -16,17 +16,17 @@
     <![endif]-->
 </head>
 <body>
-<!--desktop navigation-->
+    <!--desktop navigation-->
     <div id="menu">
         <div class="row">
             <div class="order">
                 <p>Order pizza: <span class="glyphicon glyphicon-earphone"></span><a href="tel:+4917666333666">017666333666
                 </a><span class="division">|
-                </span>
+                    </span>
                     <span class="glyphicon glyphicon-map-marker"></span><a
-                        href="https://www.google.de/maps/place/Landsberger+Allee+54,+10249+Berlin/@52.524962,
-                        13.4411931,17z/data=!3m1!4b1!4m5!3m4!1s0x47a84e6cf87f7973:0x6532b31c61d81c2!8m2!3d52.
-                        524962!4d13.4433818" target="_blank">Langberger Allee 54, 10249
+                            href="https://www.google.de/maps/place/Landsberger+Allee+54,+10249+Berlin/@52.524962,
+                            13.4411931,17z/data=!3m1!4b1!4m5!3m4!1s0x47a84e6cf87f7973:0x6532b31c61d81c2!8m2!3d52.
+                            524962!4d13.4433818" target="_blank">Langberger Allee 54, 10249
                         Berlin</a></p>
             </div>
         </div>
@@ -34,16 +34,16 @@
             <ul id="menu-list-desktop">
                 <li><a href="jobs.html">Jobs</a></li>
                 <li><a href="table.html">Oder a table</a></li>
-                <li><a href="FAQ.html">FAQ</a></li>
-                <li><a href="location.html">Find us</a></li>
+                <li><a href="faq.html">FAQ</a></li>
+                <li><a class="active" href="#">Find us</a></li>
                 <li><a href="menu.html">Menu</a></li>
-                <li><a class="active" href="#">Home</a></li>
+                <li><a href="index.html">Home</a></li>
                 <li><img id="logo" src="img/PizzaPlaceLogo.png"></li>
             </ul>
         </div>
     </div> <!--/ desktop navigation-->
 
-<!--mobile navigation-->
+    <!--mobile navigation-->
     <div class="nav-mobile"><!--on Galaxy mobile there is a black 1px black line on the left-->
         <div class="row">
             <div class="mobile-logo"><img src="img/PizzaPlaceLogo.png"/></div>
@@ -71,34 +71,32 @@
         </ul>
     </div> <!--/mobile navigation-->
 
-<!--Parallax-->
-    <div class="parallax main-photo">
-        <div class="parallax-text">
-            <h1>Best pizza in town</h1>
+    <div class="container-fluid h-100>">
+        <div class="header-faq">
+        <h1>Find us</h1>
+    </div>
+    <!--Google map-->
+    <div class="row-fluid">
+        <div class="col-xs-12 col-md-6">
+            <div id="map"></div>
         </div>
-    </div> <!--/Parallax-->
-
-<!--about us-->
-    <div class="container-fluid">
-        <div class="row">
-        <div class="text-about">
-            <h1>Pizza Place</h1>
-            <p>
-                Pizza Place is one of the most popular Pizzerias in Berlin.
-            </p>
-            <p>
-                Our pizza is exactly the same as pizza you can eat on the streets of Naples, <br>made with the same
-                ingredients and prepared using the same cooking method.
-            </p>
-            <p>
-                Our pizzas are served up alongside a carefully selected and regularly refreshed <br>range of craft beer,
-                fine wine and twists on classic cocktails.
-            </p>
+        <div class="col-xs-12 col-md-6">
+            <div class="address-container">
+                <div class="address">
+                    <h3>Visit us:</h3>
+                    <p>Pizza Place<br>
+                    Langberger Allee 54,<br>
+                    10249 Berlin
+                    </p>
+                    Nearest underground station: Landsberger Allee
+                </div>
+            </div>
         </div>
-    </div> <!--/row - about us-->
-    </div> <!--/ container about us-->
+    </div>
+    </div> <!--/container-fluid-->
 
 <!--JAVASCRIPT-->
+<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBQcfFwjSzJehXJgDZvC1twdxp6BRpsV1A&callback=initMap"></script>
 <script src="js/jquery-3.2.1.js"></script>
 <script src="js/bootstrap.js"></script>
 <script src="js/scripts.js"></script>

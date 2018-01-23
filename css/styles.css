@@ -25,6 +25,7 @@ p {
 }
 
 h1 {
+    font-size: 2em;
     text-align: center;
     margin-bottom: 50px;
     font-family: 'Fira Sans Condensed', sans-serif;
@@ -319,17 +320,45 @@ a:hover {
 }
 
 /*FAQ*/
+.header-faq {
+    padding-top: 115px;
+}
+
 .current {
-    background-color: grey;
+    background-color: #f5f5f5;
+    padding: 1px 0;
 }
 
 .answer {
     display: none;
 }
 
+.answer p {
+    margin-left: 50px;
+    color: #808080;
+}
+
+.all-questions {
+    margin: 0 auto;
+    width: 70%;
+ }
+
 .question {
     cursor: pointer;
 }
+
+.question p {
+    padding: 3px 0;
+    margin-top: 12px;
+    margin-bottom: 12px;
+    font-size: 1em;
+    font-family: 'Fira Sans Condensed', sans-serif;
+}
+
+/*.question-container {*/
+    /*border-bottom: 1px solid #ebebeb;*/
+
+/*}*/
 
 /*MENU*/
 .dish-list ul {
@@ -434,3 +463,39 @@ a:hover {
      height: 0;
      clear: both;
  }
+
+@media screen and (max-width: 849px) {
+    .all-questions {
+        width:90%;
+    }
+    .header-faq {
+        padding: 0;
+    }
+
+    .header-faq h1 {
+        margin-bottom: 30px;
+    }
+}
+
+/*LOCATION*/
+#map {
+    height: 400px;
+    width: 100%;
+}
+
+.address-container {
+    height: 400px;
+    border: 1px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.address {
+    max-width: 100%;
+    text-align: center;
+}
+
+.address h3 {
+    margin-top: 0;
+}

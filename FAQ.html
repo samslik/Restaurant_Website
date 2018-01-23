@@ -16,97 +16,162 @@
     <![endif]-->
 </head>
 <body>
+    <!--desktop navigation-->
     <div id="menu">
-        <ul id="menu-list-desktop">
-            <li><a href="jobs.html">Jobs</a></li>
-            <li><a href="table.html">Oder a table</a></li>
-            <li><a class="active" href="#">FAQ</a></li>
-            <li><a href="location.html">Find us</a></li>
-            <li><a href="menu.html">Menu</a></li>
-            <li><a href="index.html">Home</a></li>
-        </ul>
+        <div class="row">
+            <div class="order">
+                <p>Order pizza: <span class="glyphicon glyphicon-earphone"></span><a href="tel:+4917666333666">017666333666
+                </a><span class="division">|
+                    </span>
+                    <span class="glyphicon glyphicon-map-marker"></span><a
+                            href="https://www.google.de/maps/place/Landsberger+Allee+54,+10249+Berlin/@52.524962,
+                            13.4411931,17z/data=!3m1!4b1!4m5!3m4!1s0x47a84e6cf87f7973:0x6532b31c61d81c2!8m2!3d52.
+                            524962!4d13.4433818" target="_blank">Langberger Allee 54, 10249
+                        Berlin</a></p>
+            </div>
+        </div>
+        <div class="row">
+            <ul id="menu-list-desktop">
+                <li><a href="jobs.html">Jobs</a></li>
+                <li><a href="table.html">Oder a table</a></li>
+                <li><a class="active" href="#">FAQ</a></li>
+                <li><a href="location.html">Find us</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><img id="logo" src="img/PizzaPlaceLogo.png"></li>
+            </ul>
+        </div>
+    </div> <!--/ desktop navigation-->
+
+    <!--mobile navigation-->
+    <div class="nav-mobile"><!--on Galaxy mobile there is a black 1px black line on the left-->
+        <div class="row">
+            <div class="mobile-logo"><img src="img/PizzaPlaceLogo.png"/></div>
+            <div class="icon-menu">
+                <img src="img/hamburger.png"/>
+            </div>
+        </div>
+        <div class="row">
+            <div class="order clearfix">
+                <p>Order pizza: <span class="glyphicon glyphicon-earphone"></span><a href="tel:+4917666333666">017666333666
+                </a></p>
+            </div>
+        </div>
     </div>
 
     <div id="menu-mobile">
         <ul id="menu-list">
             <li id="close-icon"><img src="img/close-icon.png"/></li>
-            <li><a href="index.html">Home</a></li>
-            <li>Menu</li>
-            <li>Find us</li>
-            <li>Oder a table</li>
-            <li><a href="#">FAQ</a></li>
-            <li>Work with us</li>
+            <li><a class="active" href="#">Home</a></li>
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="location.html">Find us</a></li>
+            <li><a href="table.html">Order a table</a></li>
+            <li><a href="FAQ.html">FAQ</a></li>
+            <li><a href="jobs.html">Jobs</a></li>
         </ul>
-    </div> <!--/menu-mobile-->
-
-    <div>
-        <div class="icon-menu">
-            <img src="img/hamburger.png"/>
-        </div>
+    </div> <!--/mobile navigation-->
+    <div class="container-fluid>">
+        <div class="header-faq">
+        <h1>Here are our most frequently asked questions.</h1>
     </div>
-    <h1>Here are our Top 5 most frequently asked questions</h1>
-    <div class="question-container">
-        <div class="question">
-            <p>1. Do you sell gift cards?</p>
+        <div class="all-questions">
+            <!--dodaj animacje-->
+            <div class="question-container">
+                <div class="question">
+                    <p><span class="glyphicon glyphicon-question-sign" aria-hidden="true"></span>Do you sell gift
+                        cards?</p>
+                </div>
+                <div class="answer">
+                    <p>YES! Treat your family or friends to a wonderful dining experience at Pizza Place.
+                        Gift vouchers are available to purchase online via our website at or at the restaurant directly.
+                        They are valid for maximum of 18 months. They are non-refundable once purchased and cannot be exchanged
+                        for cash. Gift vouchers purchased online are subject to a £5 charge for postage and packaging.</p>
+                </div>
+            </div>
+            <div class="question-container">
+                <div class="question">
+                    <p><span class="glyphicon glyphicon-question-sign" aria-hidden="true"></span>Do you do a gluten free pizza?</p>
+                </div>
+                <div class="answer">
+                    <p>I’m afraid we do not. We specialise in typical Italian pizza and we do not have a glutan free recipe
+                        for a delicious pizza.</p>
+                </div>
+            </div>
+            <div class="question-container">
+                <div class="question">
+                    <p><span class="glyphicon glyphicon-question-sign" aria-hidden="true"></span>Do you run pizza making classes?</p>
+                </div>
+                <div class="answer">
+                    <p>
+                        YES! We hold a master class on the second Monday of every month in Chiswick and the second Tuesday of
+                        every month in Brighton Marina. The class lasts approximately 2 ½ hours and costs £20.00 (inc VAT).
+                        To find out more or to book, please email chiswick@francomanca.co.uk OR call on 020 8747 4822
+                        and brightonmarina@francomanca.co.uk or call on 01273 977 028
+                    </p>
+                </div>
+            </div>
+            <div class="question-container">
+                <div class="question">
+                    <p><span class="glyphicon glyphicon-question-sign" aria-hidden="true"></span>Do you do take-away?</p>
+                </div>
+                <div class="answer">
+                    <p>Yes, come to our restaurant, place your order, wait and leave as your pizza comes straight out from
+                        the oven.
+                    </p>
+                </div>
+            </div>
+            <div class="question-container">
+                <div class="question">
+                    <p><span class="glyphicon glyphicon-question-sign" aria-hidden="true"></span>Is it possible to book a table at Pizza Place?</p>
+                </div>
+                <div class="answer">
+                    <p>
+                        Our reservation lines are open from 9am until 7pm Monday to Sunday. If you wish to make a booking you
+                        can telephone us on +49 30743792 or book online. We do not take reservations via email. Please note
+                        that
+                        the largest party we can accommodate in the restaurant is 6 guests.
+                    </p>
+                </div>
+            </div>
+            <div class="question-container">
+                <div class="question">
+                    <p><span class="glyphicon glyphicon-question-sign" aria-hidden="true"></span>Where can I find the nutrition and ingredient information?</p>
+                </div>
+                <div class="answer">
+                    <p>Like most restaurants, we prepare and serve products that may contain egg, milk, soy, wheat or other
+                        allergens. Please ask a member of staff if you require any information regarding the ingredients.</p>
+                </div>
+            </div>
+            <div class="question-container">
+                <div class="question">
+                    <p><span class="glyphicon glyphicon-question-sign" aria-hidden="true"></span>Do you recycle?</p>
+                </div>
+                <div class="answer">
+                    <p>Yes, we do. Moreover me’ve made our pizza boxes, napkins, salad containers, cups, straws and utensils
+                        100% bio-degradable.
+                    </p>
+                </div>
+            </div>
+            <div class="question-container">
+                <div class="question">
+                    <p><span class="glyphicon glyphicon-question-sign" aria-hidden="true"></span>Are there nuts your menu items?</p>
+                </div>
+                <div class="answer">
+                    <p>Our entire menu is free of tree- and ground-nuts.</p>
+                </div>
+            </div>
         </div>
-        <div class="answer">
-            <p>YES! These are now available to purchase at all our pizzerias, find out more here</p>
+        <div class="unanswered">
+            <h2>If you haven't found the answer to your question</h2>
+            <div class="row-fluid">
+                <div class="col-xs-12 text-center">
+                    <!--style the button-->
+                    <button type="button" class="btn btn-primary">Contact us</button>
+                </div>
+            </div>
+            <!--dodaj mozliwosc kontaktu-->
         </div>
-    </div>
-    <div class="question-container">
-        <div class="question">
-            <p>2. Do you do a gluten free pizza?</p>
-        </div>
-        <div class="answer">
-            <p>I’m afraid that we don’t.</p>
-        </div>
-    </div>
-    <div class="question-container">
-        <div class="question">
-            <p>3. Do you run pizza making classes?</p>
-        </div>
-        <div class="answer">
-            <p>
-                YES! We hold a master class on the second Monday of every month in Chiswick and the second Tuesday of
-                every month in Brighton Marina. The class lasts approximately 2 ½ hours and costs £20.00 (inc VAT).
-                To find out more or to book, please email chiswick@francomanca.co.uk OR call on 020 8747 4822
-                and brightonmarina@francomanca.co.uk or call on 01273 977 028
-            </p>
-        </div>
-    </div>
-    <div class="question-container">
-        <div class="question">
-            <p>4. Do you do take-away?</p>
-        </div>
-        <div class="answer">
-            <p>There are 3 ways you can do this…
-                Modern (for us)… choose your local & click on the order link, order, pay…go and collect
-                Less modern…phone your local, place the order, go in, pay and take out
-                Really old fashioned…go to your local, place your order, wait and leave as it comes straight out the oven
-            </p>
-        </div>
-    </div>
-    <div class="question-container">
-        <div class="question">
-            <p>5. Do you take bookings?</p>
-        </div>
-        <div class="answer">
-            <p>
-                We’ve always run a first come, first serve policy. If on arrival you find there’s a queue, don’t worry
-                as you shouldn’t need to wait too long.
-                We do have some exceptions to our booking policy for large groups at some pizzerias and are now holding
-                back a few tables for reservation. Please visit your local pizzeria page to find out more.
-            </p>
-        </div>
-    </div>
-    <div class="question-container">
-        <div class="question">
-
-        </div>
-        <div class="answer">
-
-        </div>
-    </div>
+    </div> <!--/container-fluid-->
 
 <!--JAVASCRIPT-->
 <script src="js/jquery-3.2.1.js"></script>

@@ -30,9 +30,22 @@ var menuHighlight = function() {
         $(".select").removeClass('selected');
         $(this).addClass('selected');
     });
+};
+
+function initMap(){
+    var uluru = {lat: 52.525151, lng: 13.443371};
+    var map = new google.maps.Map(document.getElementById('map'), {
+        zoom: 15,
+        center: uluru
+    });
+    var marker = new google.maps.Marker({
+        position: uluru,
+        map: map
+    });
 }
 
 $(document).ready(menu);
 $(document).ready(faq);
 $(document).ready(menuHighlight);
+$(document).ready(initMap);
 
