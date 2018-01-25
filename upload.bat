@@ -1,0 +1,1 @@
+aws s3 sync --acl public-read --exclude .gitignore  --exclude .git/* --exclude .idea/* --exclude *.bat . s3://bochniakpizzeria --delete
